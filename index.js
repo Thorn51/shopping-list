@@ -18,7 +18,7 @@ $(document).ready(() => {
         .eq(0)
         .clone()
         .attr('id', `${$item}`)
-        .prependTo(".shopping-list")
+        .appendTo(".shopping-list")
         .show();
       $(`#${$item}>.shopping-item`)
         .text(`${$item}`)
